@@ -4,10 +4,10 @@ export default function todoApp() {
   const [inputTexts, setInputTexts] = useState("");
   const [todos, setTodos] = useState(["やる", "やるぞ", "やれば"]);
   const onChangeText = (event) => setInputTexts(event.target.value);
-  alert("入力したよ");
+  console.log(inputTexts);
 
   const onClickAdd = () => {
-    alert("click");
+    console.log(inputTexts);
     // setTodos([...todos, inputTexts]);
     // setInputTexts("");
   };
